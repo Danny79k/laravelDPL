@@ -14,7 +14,5 @@ jobs:
           port: 2222
           username: danny
           key: ${{ secrets.PRIVATE_KEY }}
-          script: |
-            cd /var/www/html/laravelDPL
-            git pull origin master
-            npm run build
+          script: "cd /var/www/html/laravelDPL; git pull origin master; npm run build"
+
